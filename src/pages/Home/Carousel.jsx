@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image1 from '../../assets/Lift/passenger.jpg'
+import image1 from '../../assets/Lift/Passenger.jpg'
 import image2 from '../../assets/Lift/Hospital.jpg'
 import image3 from '../../assets/Lift/Home.jpg'
 import image4 from '../../assets/Lift/Goods.jpg'
