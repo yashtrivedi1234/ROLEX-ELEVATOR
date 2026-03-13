@@ -1,8 +1,6 @@
 import axios from "axios";
 
-const apiBaseUrl = import.meta.env.DEV
-  ? "http://localhost:5000"
-  : import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
 
 export const adminLoginApi = async (email, password) => {
   const response = await axios.post(`${apiBaseUrl}/api/admin/login`, { email, password });
