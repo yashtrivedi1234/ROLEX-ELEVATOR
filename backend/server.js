@@ -33,6 +33,14 @@ app.use(
 );
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Rolex Elevator backend is running",
+    timestamp: new Date().toISOString(),
+  });
+});
+
 app.use("/api/contact", contactRoutes);
 app.use("/api/admin", adminRoutes);
 
